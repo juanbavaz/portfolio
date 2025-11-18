@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — Juan Bautista Vazquez</title>
+  <meta name="description" content="Portfolio de Juan Vazquez, diseñador web y frontend developer. Proyectos, servicios, tecnologías y contacto." />
+  <!-- Font Awesome para íconos (tecnologías, etc.) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido principal</a>
+
+  <header class="site-header" id="top">
+    <div class="container">
+      <nav class="nav">
+        <a class="logo" href="#top">Juan<span>Vazquez</span></a>
+
+        <!-- Toggle menú hamburguesa (solo mobile) -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir menú de navegación">
+          <span></span>
+        </label>
+
+        <ul class="nav-list">
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#tecnologias">Tecnologías</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Sección combinada: Hero + Sobre mí -->
+      <section id="sobre-mi" class="hero">
+        <div class="hero-text">
+          <h1>Hola, soy <span class="accent">Juan Vazquez</span></h1>
+          <p class="lead">
+            Diseñador web &amp; frontend developer. Creo sitios claros, rápidos y pensados
+            para marcas y personas que necesitan comunicar mejor en digital.
+          </p>
+          <p>
+            Estudio en la <strong>UTN</strong> la <strong>Tecnicatura en Programación</strong> y hace más de
+            <strong>3 años</strong> que trabajo con proyectos para clientes y emprendimientos.
+            Me interesan los sitios ordenados, fáciles de navegar y medibles: que carguen rápido,
+            se adapten bien a mobile y comuniquen claro el mensaje de cada marca.
+          </p>
+          <div class="hero-cta">
+            <a class="btn primary" href="#proyectos">Ver proyectos</a>
+           
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="fotoportada.jpg" alt="Foto de Juan Bautista Vazquez" />
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Servicios -->
+    <section id="servicios" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Servicios</h2>
+          <p>En qué tipo de proyectos puedo ayudarte.</p>
+        </header>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Landing pages</h3>
+            <p>
+              Páginas de una sola vista pensadas para campañas, lanzamientos o productos
+              específicos. Foco en claridad del mensaje y llamadas a la acción.
+            </p>
+            <ul>
+              <li>Estructura simple y ordenada.</li>
+              <li>Adaptadas a mobile.</li>
+              <li>Preparadas para medir con Analytics.</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <h3>Sitios institucionales</h3>
+            <p>
+              Webs para estudios, empresas y profesionales que necesitan presentar servicios,
+              equipo y formas de contacto de manera profesional.
+            </p>
+            <ul>
+              <li>Arquitectura de información clara.</li>
+              <li>Secciones escalables (servicios, equipo, contacto).</li>
+              <li>Formularios listos para integrar.</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <h3>Portfolios personales</h3>
+            <p>
+              Sitios para mostrar trabajos, logros y experiencia. Ideales para creativos,
+              freelancers y perfiles que necesitan una presencia digital propia.
+            </p>
+            <ul>
+              <li>Diseños limpios y fáciles de navegar.</li>
+              <li>Énfasis en los proyectos y tu historia.</li>
+              <li>Integración con redes y CV.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Proyectos destacados</h2>
+          <p>Algunos de los sitios en los que trabajé en los últimos años.</p>
+        </header>
+
+        <div class="grid projects">
+          <!-- M&V -->
+          <article class="card project">
+            <a class="card-link" href="https://www.mvtranslationservices.com/index.html" target="_blank" rel="noopener">
+              <figure class="card-media">
+                <img src="mv-translation.jpg" alt="Miniatura del sitio M&V Translation Services" />
+              </figure>
+              <div class="card-body">
+                <h3>M&V Translation Services</h3>
+                <p>Sitio bilingüe (ES/EN) para estudio de traducción profesional. Diseño, maquetado responsive e implementación del formulario de contacto.</p>
+                <ul class="tags">
+                  <li>Diseño web</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Responsive</li>
+                </ul>
+              </div>
+            </a>
+          </article>
+
+          <!-- QYCIA -->
+          <article class="card project">
+            <a class="card-link" href="https://www.qycia.com.ar/" target="_blank" rel="noopener">
+              <figure class="card-media">
+                <img src="qycia.jpg" alt="Miniatura del sitio QYCIA" />
+              </figure>
+              <div class="card-body">
+                <h3>QYCIA</h3>
+                <p>Sitio corporativo para empresa de servicios. Estructura de secciones, adaptación a distintas resoluciones y foco en el contacto.</p>
+                <ul class="tags">
+                  <li>Frontend</li>
+                  <li>UI</li>
+                  <li>Maquetado</li>
+                </ul>
+              </div>
+            </a>
+          </article>
+
+          <!-- Valentín Jorquera -->
+          <article class="card project">
+            <a class="card-link" href="https://valentinjorquera.netlify.app/" target="_blank" rel="noopener">
+              <figure class="card-media">
+                <img src="valentin-jorquera.jpg" alt="Miniatura del sitio de Valentín Jorquera" />
+              </figure>
+              <div class="card-body">
+                <h3>Portfolio Valentín Jorquera</h3>
+                <p>Portfolio personal para creador de contenido. Diseño simple, lectura rápida y foco en la presentación del perfil.</p>
+                <ul class="tags">
+                  <li>Landing</li>
+                  <li>UX writing</li>
+                  <li>Responsive</li>
+                </ul>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tecnologías -->
+    <section id="tecnologias" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Tecnologías</h2>
+          <p>Stack con el que trabajo en el día a día.</p>
+        </header>
+
+        <div class="tech-grid">
+          <article class="tech-card">
+            <div class="tech-icon"><i class="fa-brands fa-html5"></i></div>
+            <h3>HTML5</h3>
+            <p>Maquetado semántico, estructura clara y buenas prácticas para SEO.</p>
+          </article>
+
+          <article class="tech-card">
+            <div class="tech-icon"><i class="fa-brands fa-css3-alt"></i></div>
+            <h3>CSS3</h3>
+            <p>Layouts responsivos, flexbox/grid y diseño orientado a componentes.</p>
+          </article>
+
+          <article class="tech-card">
+            <div class="tech-icon"><i class="fa-brands fa-js"></i></div>
+            <h3>JavaScript</h3>
+            <p>Interactividad, lógica en frontend y mejora de la experiencia de usuario.</p>
+          </article>
+
+          <article class="tech-card">
+            <div class="tech-icon"><i class="fa-brands fa-git-alt"></i></div>
+            <h3>Git</h3>
+            <p>Control de versiones, trabajo por ramas y colaboración profesional.</p>
+          </article>
+
+          <article class="tech-card">
+            <div class="tech-icon"><i class="fa-brands fa-react"></i></div>
+            <h3>React</h3>
+            <p>Componentes reutilizables e interfaces reactivas.</p>
+          </article>
+
+          <article class="tech-card">
+            <div class="tech-icon"><i class="fa-brands fa-node-js"></i></div>
+            <h3>Node.js</h3>
+            <p>Fundamentos de backend con JavaScript y APIs simples.</p>
+          </article>
+
+          <article class="tech-card">
+            <div class="tech-icon"><i class="fa-solid fa-database"></i></div>
+            <h3>MySQL</h3>
+            <p>Bases de datos, consultas y persistencia de información.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Contacto</h2>
+          <p>Si tenés un proyecto en mente o querés ver más trabajos, escribime y lo vemos.</p>
+        </header>
+
+        <div class="contact">
+          <!-- Columna 1: info -->
+          <div class="contact-card contact-info">
+            <h3>Datos de contacto</h3>
+            <p><span class="label">Email:</span> <a href="mailto:juanba.vazquez13@gmail.com">juanba.vazquez13@gmail.com</a></p>
+            <p><span class="label">Teléfono:</span> <a href="tel:+541137031107">+54 11 3703-1107</a></p>
+
+            <h3>Redes</h3>
+            <ul class="social">
+              <li><a href="https://www.linkedin.com/in/juan-vazquez-441a3425a/" aria-label="LinkedIn">LinkedIn</a></li>
+              <li><a href="https://github.com/juanbavaz?tab=repositories" aria-label="GitHub">GitHub</a></li>
+              <li><a href="https://wa.me/1137031107" aria-label="Behance">Whatsapp</a></li>
+            </ul>
+
+            
+          </div>
+
+          <form action="https://formsubmit.co/juanba.vazquez13@gmail.com" method="POST" class="contact-form-inner">
+
+    <!-- Evita SPAM bots -->
+    <input type="hidden" name="_captcha" value="false">
+
+
+    <div class="field-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+    </div>
+
+    <div class="field-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="field-group">
+        <label for="tipo">Tipo de proyecto</label>
+        <select id="tipo" name="tipo">
+            <option value="">Seleccioná una opción</option>
+            <option value="landing">Landing page</option>
+            <option value="institucional">Sitio institucional</option>
+            <option value="portfolio">Portfolio personal</option>
+            <option value="otro">Otro</option>
+        </select>
+    </div>
+
+    <div class="field-group">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4"
+          placeholder="Contame brevemente qué necesitás"></textarea>
+    </div>
+
+    <button type="submit" class="btn primary btn-full">Enviar mensaje</button>
+</form>
+
+
+              
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Juan Bautista Vazquez — Diseñador web &amp; frontend developer</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
