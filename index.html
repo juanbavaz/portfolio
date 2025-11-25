@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio — Juan Bautista Vazquez</title>
   <meta name="description" content="Portfolio de Juan Vazquez, diseñador web y frontend developer. Proyectos, servicios, tecnologías y contacto." />
-  <!-- Font Awesome para íconos (tecnologías, etc.) -->
+  <!-- Font Awesome para íconos -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css" />
+   <link rel="icon" href="JV.png">
 </head>
 <body>
   <a class="skip-link" href="#main">Saltar al contenido principal</a>
@@ -16,6 +17,11 @@
     <div class="container">
       <nav class="nav">
         <a class="logo" href="#top">Juan<span>Vazquez</span></a>
+
+        <!-- Toggle tema -->
+        <button class="theme-toggle" type="button" id="theme-toggle" aria-label="Cambiar tema">
+          <i class="fa-solid fa-moon"></i>
+        </button>
 
         <!-- Toggle menú hamburguesa (solo mobile) -->
         <input type="checkbox" id="nav-toggle" class="nav-toggle" />
@@ -35,6 +41,7 @@
       <!-- Sección combinada: Hero + Sobre mí -->
       <section id="sobre-mi" class="hero">
         <div class="hero-text">
+          <p class="hero-kicker">Frontend Developer · Diseñador web</p>
           <h1>Hola, soy <span class="accent">Juan Vazquez</span></h1>
           <p class="lead">
             Diseñador web &amp; frontend developer. Creo sitios claros, rápidos y pensados
@@ -48,11 +55,20 @@
           </p>
           <div class="hero-cta">
             <a class="btn primary" href="#proyectos">Ver proyectos</a>
-           
+            <a class="btn ghost" href="#contacto">Hablemos</a>
           </div>
         </div>
         <div class="hero-media">
-          <img src="fotoportada.jpg" alt="Foto de Juan Bautista Vazquez" />
+          <div class="hero-media-inner">
+            <img src="fotoportada.jpg" alt="Foto de Juan Bautista Vazquez" />
+            <div class="hero-badge">
+              <span class="hero-badge-dot"></span>
+              <div>
+                <p class="hero-badge-title">+3 años</p>
+                <p class="hero-badge-sub">Diseñando y desarrollando sitios web</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
@@ -124,7 +140,11 @@
           <article class="card project">
             <a class="card-link" href="https://www.mvtranslationservices.com/index.html" target="_blank" rel="noopener">
               <figure class="card-media">
-                <img src="mv-translation.jpg" alt="Miniatura del sitio M&V Translation Services" />
+                <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=900&q=80"
+                     alt="Landing corporativa para estudio de traducción profesional" />
+                <div class="card-overlay">
+                  <span>Ver sitio</span>
+                </div>
               </figure>
               <div class="card-body">
                 <h3>M&V Translation Services</h3>
@@ -143,7 +163,11 @@
           <article class="card project">
             <a class="card-link" href="https://www.qycia.com.ar/" target="_blank" rel="noopener">
               <figure class="card-media">
-                <img src="qycia.jpg" alt="Miniatura del sitio QYCIA" />
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80"
+                     alt="Web corporativa para empresa de servicios profesionales" />
+                <div class="card-overlay">
+                  <span>Ver sitio</span>
+                </div>
               </figure>
               <div class="card-body">
                 <h3>QYCIA</h3>
@@ -161,7 +185,11 @@
           <article class="card project">
             <a class="card-link" href="https://valentinjorquera.netlify.app/" target="_blank" rel="noopener">
               <figure class="card-media">
-                <img src="valentin-jorquera.jpg" alt="Miniatura del sitio de Valentín Jorquera" />
+                <img src="https://images.unsplash.com/photo-1526948531399-320e7e40f0ca?auto=format&fit=crop&w=900&q=80"
+                     alt="Portfolio personal de creador de contenido y artista" />
+                <div class="card-overlay">
+                  <span>Ver sitio</span>
+                </div>
               </figure>
               <div class="card-body">
                 <h3>Portfolio Valentín Jorquera</h3>
@@ -244,59 +272,89 @@
           <!-- Columna 1: info -->
           <div class="contact-card contact-info">
             <h3>Datos de contacto</h3>
-            <p><span class="label">Email:</span> <a href="mailto:juanba.vazquez13@gmail.com">juanba.vazquez13@gmail.com</a></p>
-            <p><span class="label">Teléfono:</span> <a href="tel:+541137031107">+54 11 3703-1107</a></p>
 
-            <h3>Redes</h3>
-            <ul class="social">
-              <li><a href="https://www.linkedin.com/in/juan-vazquez-441a3425a/" aria-label="LinkedIn">LinkedIn</a></li>
-              <li><a href="https://github.com/juanbavaz?tab=repositories" aria-label="GitHub">GitHub</a></li>
-              <li><a href="https://wa.me/1137031107" aria-label="Behance">Whatsapp</a></li>
+            <ul class="contact-list">
+              <li>
+                <span class="contact-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </span>
+                <div>
+                  <p class="contact-label">Email</p>
+                  <a href="mailto:juanba.vazquez13@gmail.com">juanba.vazquez13@gmail.com</a>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </span>
+                <div>
+                  <p class="contact-label">Teléfono</p>
+                  <a href="tel:+541137031107">+54 11 3703-1107</a>
+                </div>
+              </li>
             </ul>
 
-            
+            <h3>Redes</h3>
+            <ul class="social social-icons">
+              <li>
+                <a href="https://www.linkedin.com/in/juan-vazquez-441a3425a/" aria-label="LinkedIn">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                  <span>LinkedIn</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/juanbavaz?tab=repositories" aria-label="GitHub">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/541137031107" aria-label="WhatsApp">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <span>WhatsApp</span>
+                </a>
+              </li>
+            </ul>
           </div>
 
           <form action="https://formsubmit.co/juanba.vazquez13@gmail.com" method="POST" class="contact-form-inner">
+            <!-- Evita SPAM bots -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="Nuevo mensaje desde el portfolio">
+            <input type="hidden" name="_template" value="table">
 
-    <!-- Evita SPAM bots -->
-    <input type="hidden" name="_captcha" value="false">
+            <div class="field-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </div>
 
+            <div class="field-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
 
-    <div class="field-group">
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" required>
-    </div>
+            <div class="field-group">
+              <label for="tipo">Tipo de proyecto</label>
+              <select id="tipo" name="tipo">
+                <option value="">Seleccioná una opción</option>
+                <option value="landing">Landing page</option>
+                <option value="institucional">Sitio institucional</option>
+                <option value="portfolio">Portfolio personal</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
 
-    <div class="field-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-    </div>
+            <div class="field-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="4"
+                placeholder="Contame brevemente qué necesitás"></textarea>
+            </div>
 
-    <div class="field-group">
-        <label for="tipo">Tipo de proyecto</label>
-        <select id="tipo" name="tipo">
-            <option value="">Seleccioná una opción</option>
-            <option value="landing">Landing page</option>
-            <option value="institucional">Sitio institucional</option>
-            <option value="portfolio">Portfolio personal</option>
-            <option value="otro">Otro</option>
-        </select>
-    </div>
-
-    <div class="field-group">
-        <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" name="mensaje" rows="4"
-          placeholder="Contame brevemente qué necesitás"></textarea>
-    </div>
-
-    <button type="submit" class="btn primary btn-full">Enviar mensaje</button>
-</form>
-
-
-              
-            
-          </div>
+            <button type="submit" class="btn primary btn-full">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Enviar mensaje</span>
+            </button>
+          </form>
         </div>
       </div>
     </section>
@@ -310,7 +368,44 @@
   </footer>
 
   <script>
+    // Año dinámico
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Toggle de tema
+    (function() {
+      const root = document.documentElement;
+      const toggle = document.getElementById('theme-toggle');
+      const icon = toggle.querySelector('i');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+      function updateIcon(theme) {
+        if (theme === 'light') {
+          icon.classList.remove('fa-moon');
+          icon.classList.add('fa-sun');
+        } else {
+          icon.classList.remove('fa-sun');
+          icon.classList.add('fa-moon');
+        }
+      }
+
+      function setTheme(theme) {
+        root.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        updateIcon(theme);
+      }
+
+      // Tema inicial
+      let stored = localStorage.getItem('theme');
+      if (stored !== 'light' && stored !== 'dark') {
+        stored = prefersDark.matches ? 'dark' : 'light';
+      }
+      setTheme(stored);
+
+      toggle.addEventListener('click', () => {
+        const current = root.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+        setTheme(current === 'light' ? 'dark' : 'light');
+      });
+    })();
   </script>
 </body>
 </html>
